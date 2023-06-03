@@ -1,0 +1,3 @@
+# factory-C
+
+unspecified [[factory]]
