@@ -1,3 +1,3 @@
 # darling
 
-[[factory]]
+[[factory]] in east Des Moines
