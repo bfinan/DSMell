@@ -1,4 +1,5 @@
 ## Daily script for automated tasks
+## Script should be idempotent, and should be able to run multiple times a day
 
 import os, datetime, subprocess, random, requests
 #from myosotis import *
@@ -19,19 +20,19 @@ def dateinfo():
             + (datetime.datetime.today() + datetime.timedelta(days=1)).strftime("%A, %B %d")
         )
 
-def autojanny():
-    # run autojanny and push to git
+def autojanitor():
+    # run autojanitor and push to git
     os_type = os.name
     if os.name == "nt":
-        subprocess.run("cmd /c autojanny.sh", shell=True)
+        subprocess.run("cmd /c autojanitor.sh", shell=True)
         subprocess.run("cmd /c push.sh", shell=True)
     else:
-        subprocess.run("bash autojanny.sh 2 > /dev/null", shell=True)
+        subprocess.run("bash autojanitor.sh 2 > /dev/null", shell=True)
         subprocess.run("bash push.sh 2 > /dev/null", shell=True)
 
 ## main function
 def main():
-    autojanny()
+    autojanitor()
 
     # print "done" and the coffee emoji
     print("done ☕️")
