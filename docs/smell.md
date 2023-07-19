@@ -2,7 +2,7 @@
 
 smell in general, not necessarily DSMell
 
-[[measuring-smell]] [[olfaction]]
+[[measuring-smell]] [[olfaction]] [[scent]]
 
 ## Things that smell good
 
